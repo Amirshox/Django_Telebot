@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block thanks %}
+    <!-- Спасибо -->
+    <section>
+        {% if name %}
+            <div class="container">
+                <CENTER style='margin-top: 35%; margin-bottom: 35%;'><h1>{{ name }}, Ariza qoldirganiz uchun raxmat!</h1></CENTER>
+            </div>
+        {% else %}
+            <div class="container">
+                <CENTER style='margin-top: 35%; margin-bottom: 35%;'><h1>Спасибо за заявку!</h1></CENTER>
+            </div>
+        {% endif %}
+    </section>
+    <!-- Спасибо -->
+{% endblock %}
